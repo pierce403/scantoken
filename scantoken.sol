@@ -1,16 +1,17 @@
 /******
  * 
- *  Global Scan Token
+ *  Global Scan Token (GST)
  * 
  *  Incentivizing the machinery to scan, analyze, and
- *  protect the global infromation infrastructure.
+ *  protect the global information infrastructure.
  * 
  *  More info at https://scantoken.org
  * 
  *  Deployed at 0x382f5dfe9ee6e309d1b9d622735e789afde6bade with 10 million tokens.
- * 
+ *  Compiled with Solidity 0.6.4, optimization disabled
+ *
  * /
-
+ 
 
 // File: GSN/Context.sol
 
