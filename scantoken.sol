@@ -1,3 +1,16 @@
+/******
+ * 
+ *  Global Scan Token
+ * 
+ *  Incentivizing the machinery to scan, analyze, and
+ *  protect the global infromation infrastructure.
+ * 
+ *  More info at https://scantoken.org
+ * 
+ *  Deployed at 0x382f5dfe9ee6e309d1b9d622735e789afde6bade with 10 million tokens.
+ * 
+ * /
+
 
 // File: GSN/Context.sol
 
