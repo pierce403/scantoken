@@ -553,3 +553,9 @@ abstract contract ERC20Detailed is IERC20 {
         return _decimals;
     }
 }
+
+contract ScanToken is ERC20, ERC20Detailed {
+    constructor(uint256 initialSupply) ERC20Detailed("Global Scan Token", "GST", 18) public {
+        _mint(msg.sender, initialSupply);
+    }
+}
