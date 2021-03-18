@@ -16,8 +16,16 @@ contract TokenCashier {
 
     uint public nonce = 0;
 
+    // for interacting with the token well
+    address public wellAddr=0xFAF829Ee3AFd9641C40076B0eaebd58CCf1CC6ba;
+    TokenWell tokenWell = TokenWell(wellAddr);
+
     function getBalance() public view returns(uint balance) {
         balance = erc20.balanceOf(address(this));
+    }
+
+    function pumpWell() public {
+        tokenWell.pump();
     }
     
     function redeemVoucher(bytes calldata message, bytes32 hash, uint8 v, bytes32 r, bytes32 s) public {
@@ -35,13 +43,6 @@ contract TokenCashier {
         
         erc20.transfer(dest,amount); // send the tokens
     }
-
-    /* useful for testing
-    function voucherHash(bytes memory message) public pure returns(bytes32 prefixedHash) {
-        bytes memory prefix = "\x19Ethereum Signed Message:\n96";
-        prefixedHash = keccak256(abi.encodePacked(prefix, message));
-    }
-    */
 
     function voucherCheck(bytes memory message, bytes32 hash, uint8 v, bytes32 r, bytes32 s) public pure returns(address signer) {
         
@@ -88,6 +89,10 @@ contract TokenCashier {
     }
 }
 
+
+interface TokenWell{
+    function pump() external returns (uint256 balance);
+}
 
 interface ERC20{
     //function approve(address spender, uint256 value)external returns(bool);
