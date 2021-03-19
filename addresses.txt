@@ -1,0 +1,7 @@
+List of important addresses:
+
+0x382f5DfE9eE6e309D1B9D622735e789aFde6BADe GST Token address
+0x47A0DF2667706848f5986Edf5E3Ed7d8C149A9b1 first public TokenWell, gives out 1%, no time limit
+0xd51F8976C5101ef06205674b8319f7DFbf1Ec583 second public TokenWell, gives out 0.1%, 10 minute limit
+0xFAF829Ee3AFd9641C40076B0eaebd58CCf1CC6ba nweb TokenWell, for GST payouts, 1% once per week
+0xC31Fe555Bf96b6AE451faA65D6C8D226f6E1bB33 TokenCashier, for cashing out vouhers in nweb, fueled by above TokenWell
