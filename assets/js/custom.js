@@ -89,7 +89,7 @@ jQuery(function($) {
 
 /*----- Preloader ----- */
 
-    $(window).load(function() {
+    $(window).on("load", function() {
   		setTimeout(function() {
         $('#loading').fadeOut('slow', function() {
         });
